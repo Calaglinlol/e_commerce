@@ -11,13 +11,14 @@ class AuthController extends Controller
     //
     public function signup(CreateUser $request)
     {
-        $validateData = $request->validated();
-        $user = new User([
-            'name' => $validateData['name'],
-            'email' => $validateData['email'],
-            'password' => bcrypt($validateData['password']),
-        ]);
-        $user->save();
-        return response('success', 201);
+        dump(123);
+        // $validateData = $request->validated();
+        // $user = new User([
+        //     'name' => $validateData['name'],
+        //     'email' => $validateData['email'],
+        //     'password' => bcrypt($validateData['password']),
+        // ]);
+        // $user->save();
+        // return response('success', 201);
     }
 }
