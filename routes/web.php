@@ -23,5 +23,6 @@ use App\Http\Controllers\AuthController;
 
 Route::resource('products', ProductController::class);
 Route::resource('carts', CartController::class);
-Route::resource('cart_items', CartItemController::class);
+Route::resource('cart-items', CartItemController::class);
 Route::post('signup', [AuthController::class, 'signup']);
+Route::post('login', [AuthController::class, 'login']);
