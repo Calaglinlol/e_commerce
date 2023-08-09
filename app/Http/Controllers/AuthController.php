@@ -33,5 +33,22 @@ class AuthController extends Controller
         }
         $user = $request->user();
         $tokenResult = $user->createToken('Token');
+        $tokenResult->token->save();
+        return response(['token' => $tokenResult->accessToken]);
+    }
+
+    public function user(Request $request)
+    {
+        return response(
+            $request->user()
+        );
+    }
+
+    public function logout(Request $request) 
+    {
+        $request->user()->token()->revoke();
+        return response(
+            ['message' => '成功登出']
+        );
     }
 }

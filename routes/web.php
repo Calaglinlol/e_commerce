@@ -26,3 +26,7 @@ Route::resource('carts', CartController::class);
 Route::resource('cart-items', CartItemController::class);
 Route::post('signup', [AuthController::class, 'signup']);
 Route::post('login', [AuthController::class, 'login']);
+Route::middleware('auth:api')->group(function () {
+    Route::get('user', [AuthController::class, 'user']);   
+    Route::get('logout', [AuthController::class, 'logout']);   
+});
