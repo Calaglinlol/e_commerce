@@ -21,12 +21,18 @@ use App\Http\Controllers\AuthController;
 //     return view('welcome');
 // });
 
-Route::resource('products', ProductController::class);
-Route::resource('carts', CartController::class);
-Route::resource('cart-items', CartItemController::class);
+
+Route::middleware('check.dirty:api')->group(function () {
+    Route::resource('products', ProductController::class);
+});
+
+
 Route::post('signup', [AuthController::class, 'signup']);
 Route::post('login', [AuthController::class, 'login']);
 Route::middleware('auth:api')->group(function () {
     Route::get('user', [AuthController::class, 'user']);   
     Route::get('logout', [AuthController::class, 'logout']);   
+    Route::post('carts/checkout', [CartController::class, 'checkout']);   
+    Route::resource('carts', CartController::class);
+    Route::resource('cart-items', CartItemController::class);
 });
