@@ -54,7 +54,7 @@ class CartItemController extends Controller
         }
 
         $cart = Cart::find($validatedData['cart_id']);
-        $result = $cart->cartItems()->create(['product_id' => $product->$id,
+        $result = $cart->cartItems()->create(['product_id' => $product->id,
                                               'quantity' => $validatedData['quantity']]);
         return response()->json($result);
     }

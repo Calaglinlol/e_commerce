@@ -45,9 +45,9 @@ class Cart extends Model
         }
         foreach($this->cartItems as $cartItem) 
         {
-            $order->orderItem()->create([
+            $order->orderItems()->create([
                 'product_id' => $cartItem->product_id,
-                'price' => $cartItem->product->price * $this->rate;
+                'price' => $cartItem->product->price * $this->rate
             ]);
             $cartItem->product->update(['quantity' => $cartItem->product->quantity - $cartItem->quantity]);
         }
