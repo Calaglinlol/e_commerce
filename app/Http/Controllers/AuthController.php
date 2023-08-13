@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
-    //
+    //註冊
     public function signup(CreateUser $request)
     {
         $validateData = $request->validated();
@@ -22,6 +22,7 @@ class AuthController extends Controller
         return response('success', 201);
     }
 
+    //信箱密碼登入&產生Token
     public function login(Request $request)
     {
         $validateData = $request->validate([
@@ -37,6 +38,7 @@ class AuthController extends Controller
         return response(['token' => $tokenResult->accessToken]);
     }
 
+    //驗證Token
     public function user(Request $request)
     {
         return response(
@@ -44,6 +46,7 @@ class AuthController extends Controller
         );
     }
 
+    //登出
     public function logout(Request $request) 
     {
         $request->user()->token()->revoke();

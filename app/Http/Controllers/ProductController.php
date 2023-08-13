@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use App\Models\Product;
 
 class ProductController extends Controller
 {
@@ -29,7 +30,10 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $this->getdata();
+        $newdata = $request->all();
+        $data->push(collect($newdata));
+        return response($data);
     }
 
     /**
@@ -53,7 +57,11 @@ class ProductController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        $data = $this->getdata();
+        $form = $request->all();
+        $selectdata = $data->where('id', $id)->first();
+        $selectdata = $selectdata->merge(collect($form));
+        return response($selectdata);
     }
 
     /**
@@ -61,6 +69,22 @@ class ProductController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $data = $this->getdata();
+        $data = $data->filter(function($product) use ($id){
+            return $product['id'] != $id;
+        });
+        return response($data->values());
+    }
+
+    public function getdata()
+    {
+        return collect([
+            collect([ "id" => 0,
+                "title" => "test1",
+                "price" => 1000]),
+            collect([   "id" => 1,
+                "title" => "test2",
+            "price" => 2000]) 
+        ]);
     }
 }
