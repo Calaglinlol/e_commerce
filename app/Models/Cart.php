@@ -52,6 +52,7 @@ class Cart extends Model
             $cartItem->product->update(['quantity' => $cartItem->product->quantity - $cartItem->quantity]);
         }
         $this->update(['checkouted' => true]);
+        $order->orderItems;
         return $order;
     }
 }
