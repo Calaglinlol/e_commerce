@@ -26,3 +26,5 @@
 #### SQL結構圖
 ![GITHUB](https://github.com/Calaglinlol/e_commerce/blob/master/ER_Model.png "")
 
+<img src="https://github.com/Calaglinlol/e_commerce/blob/master/ER_Model.png" alt="GitHub ER Model" width="300" height="200">
+
