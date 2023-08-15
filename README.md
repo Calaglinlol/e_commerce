@@ -24,4 +24,4 @@
 [![](https://i.ytimg.com/vi/uyv5EQ4Zcco/maxresdefault.jpg)](https://youtu.be/uyv5EQ4Zcco  "")
 
 #### SQL結構圖
-![Alt text]([/path/to/img.jpg](https://github.com/Calaglinlol/e_commerce/blob/master/ER_Model.png)https://github.com/Calaglinlol/e_commerce/blob/master/ER_Model.png)
+https://github.com/Calaglinlol/e_commerce/blob/master/ER_Model.png
