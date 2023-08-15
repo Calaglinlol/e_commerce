@@ -21,9 +21,9 @@
    4. 有資料預產生器 Seeder
 
 #### Postman作品DEMO
-<div style="width: 450px; height: 300px;">
+<div>
   <a href="https://youtu.be/uyv5EQ4Zcco">
-    <img src="https://i.ytimg.com/vi/uyv5EQ4Zcco/maxresdefault.jpg" alt="YouTube Video">
+    <img src="https://i.ytimg.com/vi/uyv5EQ4Zcco/maxresdefault.jpg" alt="YouTube Video" width="450" height="300>
   </a>
 </div>
 
