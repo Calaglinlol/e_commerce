@@ -21,8 +21,6 @@
    4. 有資料預產生器 Seeder
 
 #### Postman作品DEMO
-
-[![YouTube Video](https://i.ytimg.com/vi/uyv5EQ4Zcco/maxresdefault.jpg)](https://youtu.be/uyv5EQ4Zcco)
 <img src="https://i.ytimg.com/vi/uyv5EQ4Zcco/maxresdefault.jpg" alt="YouTube Video" width="450" height="300">
 
 #### SQL結構圖
