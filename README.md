@@ -26,6 +26,5 @@
 <img src="https://i.ytimg.com/vi/uyv5EQ4Zcco/maxresdefault.jpg" alt="YouTube Video" width="450" height="300">
 
 #### SQL結構圖
-
 <img src="https://github.com/Calaglinlol/e_commerce/blob/master/ER_Model.png" alt="GitHub ER Model" width="450" height="300">
 
