@@ -24,5 +24,5 @@
 [![YouTube Video](https://i.ytimg.com/vi/uyv5EQ4Zcco/maxresdefault.jpg)](https://youtu.be/uyv5EQ4Zcco)
 
 #### SQL結構圖
-<img src="https://github.com/Calaglinlol/e_commerce/blob/master/ER_Model.png" alt="GitHub ER Model" width="550" height="400">
+<img src="https://github.com/Calaglinlol/e_commerce/blob/master/ER_Model.png" alt="GitHub ER Model" width="1000" height="958">
 
