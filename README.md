@@ -21,8 +21,8 @@
    4. 有資料預產生器 Seeder
 
 #### Postman作品DEMO
-<img src="https://i.ytimg.com/vi/uyv5EQ4Zcco/maxresdefault.jpg" alt="YouTube Video" width="450" height="300">
+[![YouTube Video](https://i.ytimg.com/vi/uyv5EQ4Zcco/maxresdefault.jpg)](https://youtu.be/uyv5EQ4Zcco)
 
 #### SQL結構圖
-<img src="https://github.com/Calaglinlol/e_commerce/blob/master/ER_Model.png" alt="GitHub ER Model" width="450" height="300">
+<img src="https://github.com/Calaglinlol/e_commerce/blob/master/ER_Model.png" alt="GitHub ER Model" width="550" height="400">
 
